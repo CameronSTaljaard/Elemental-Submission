@@ -1,0 +1,81 @@
+.carousel-overlay {
+	position: absolute;
+	top: 22vw;
+	height: 5vw;
+	width: 48vw;
+	background-color: #244AC2;
+}
+
+.carousel-overlay-right {
+	position: absolute;
+	top: 22vw;
+	height: 5vw;
+	width: 48vw;
+	margin-left: auto;
+	margin-right: 0;
+	right: 0;
+	background-color: black;
+	z-index: -1;
+}
+
+@media only screen and (max-width: 1200px) {
+	.carousel-overlay {
+		position: absolute;
+		top: 30vw;
+		height: 5vw;
+		width: 48vw;
+		background-color: #244AC2;
+	}
+	
+	.carousel-overlay-right {
+		position: absolute;
+		top: 30vw;
+		height: 5vw;
+		width: 48vw;
+		margin-left: auto;
+		margin-right: 0;
+		right: 0;
+		background-color: black;
+		z-index: -1;
+	}
+}
+
+.carousel-text {
+	text-align: right;
+	right: 35px;
+	white-space: nowrap;
+	/*word-wrap: break-word;*/
+	position: relative;
+	line-height: 2vw;
+	font-size: 1.5vw;
+	margin-left: 8vw;
+	color: white;
+	font-weight: 600;
+}
+
+.arrow-right {
+  height: 3vw;
+  width: 3vw;
+  box-shadow: 2px -2px white inset;
+  transform: rotate(225deg);
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel figure {
+  position: relative;
+  width: 600vw;
+  transition: 1s;
+  display: flex;
+  margin: 0;
+}
+
+.carousel figure img {
+  width: 85vw;
+  object-fit: fill;
+}

@@ -1,0 +1,65 @@
+/* Basic Header CSS */
+
+header {
+  background-color:white;
+	padding: 1vh 0;
+}
+
+#header {
+  height: 3vw;
+  max-height: 60px;
+  display: flex;
+  padding: 15px;
+  width: 70vw;
+  margin: auto;
+}
+
+#header-logo {
+	display: flex;
+  height: 5vw;
+  position: relative;
+  top: auto;
+  bottom: 0.4vw;
+	max-height: 50px;
+}
+
+/* Burger animation */
+
+.burger-icon {
+  width: 20px;
+  height: 18px;
+	margin: 20px 0px 20px auto;
+  cursor: pointer;
+  margin-top: 0.5vw;
+  position: relative;
+}
+.burger-icon span {
+  background-color: black;
+  height: 3px;
+  position: absolute;
+  width: 120%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.burger-icon span:first-child {
+  top: 0;
+}
+.burger-icon span:nth-child(2) {
+  top: 9px;
+}
+.burger-icon span:last-child {
+  top: 18px;
+}
+.burger-icon:hover span:nth-child(2) {
+  opacity: 0;
+}
+.burger-icon:hover span:first-child,
+.burger-icon:hover span:last-child {
+  top: 6px;
+}
+.burger-icon:hover span:first-child {
+  transform: rotate(45deg);
+}
+.burger-icon:hover span:last-child {
+  transform: rotate(-45deg);
+}
